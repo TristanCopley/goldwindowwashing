@@ -23,7 +23,7 @@ const NavigationBar = () => {
                 </span>
             </div>
             <div className='w-full flex flex-row justify-center gap-x-6 p-2'>
-                    <NavButton title={"Homepage"} link='/about'></NavButton>
+                    <NavButton title={"Homepage"} link='/'></NavButton>
                     <NavButton title={"About Us"} link='/about'></NavButton>
                     <NavButton title={"Services"} link='/services'></NavButton>
                     <NavButton title={"Contact"} link='/contact'></NavButton>

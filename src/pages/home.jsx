@@ -2,12 +2,16 @@ import React from 'react'
 import Hero_Image from '../assets/images/hero_image.jpg'
 import QuoteButton from '../components/quote_button';
 
+import Footer from '../components/footer';
+
 import Card from '../components/card.jsx'
 import Service_Image from '../assets/images/services.jpeg'
 import Detailed_Scrubbing_Image from '../assets/images/detailed_scrubbing.jpg'
 import Frame_Treatment_Image from '../assets/images/frame_treatment.jpg'
 import Washing_Image from '../assets/images/washing_image.jpg'
 import Squeegee_Image from '../assets/images/squeegee_image.jpg'
+
+import Carousel from '../components/carousel';
 
 const Home = () => {
 
@@ -16,7 +20,7 @@ const Home = () => {
 
             {/* Hero image */}
             <div className='w-screen h-screen fixed -z-10 bg-black'> </div>
-            <img src={Hero_Image} alt='GWW Temp Image' className='w-full h-full object-cover fixed -z-10 opacity-10'/>
+            <img src={Hero_Image} alt='GWW Temp Image' className='w-full h-full object-cover fixed -z-10 opacity-40'/>
 
             {/* <div className='w-screen h-screen fixed -z-10 bg-black'> </div>*/}
 
@@ -32,7 +36,7 @@ const Home = () => {
             </div>
 
             {/* Services */}
-            <div className='h-192 bg-black w-full p-16 bg-opacity-70 flex flex-col gap-y-14'>
+            <div className='h-192 bg-black bg-opacity-70 w-full flex flex-col justify-center gap-y-14'>
                 <div className='flex w-full justify-center gap-12'>
                     <span className='flex justify-center h-64'>
                         <div className='w-96 h-full bg-yellow-500 flex self-center justify-center p-6 rounded-md'>
@@ -58,29 +62,52 @@ const Home = () => {
             </div>
 
             {/* About */}
-            <div className='h-144 bg-green-500 w-full flex justify-around p-16'>
-                <div className='w-1/2 h-full bg-yellow-500 flex flex-col self-center justify-center p-6'>
-                    <span className='flex self-center'>
-                        About
-                    </span>
-                    <span className='flex self-center'>
-                        <QuoteButton />
-                    </span>
+            <div className='w-full h-144 flex justify-around p-16'>
+                <div className='w-5/12 h-full bg-yellow-500 flex flex-col self-center justify-center p-6 gap-5 rounded-md text-white'>
+                        <h1 className='flex self-center'>
+                            About
+                        </h1>
+                        <h2 className='flex self-center text-center w-2/3'>
+                            San Diego Super Window Ninjas is a team of young entrepreneurs dedicated to providing professional window cleaning services to the community. 
+                            Our swift and affordable services ensure that homes are left with sparkling, radiant windows. 
+                            We offer a comprehensive range of services, including outdoor and indoor window washing, as well as screen cleaning. 
+                            Our team is highly efficient and dedicated to ensuring customer satisfaction.
+                        </h2>
+                        <span className='flex self-center text-center'>
+                            <QuoteButton />
+                        </span>
                 </div>
-                <div className='w-144 h-full bg-yellow-500 flex self-center justify-center p-6'>
-                    Img
+                <div className='w-144 h-full bg-yellow-500 flex self-center justify-center p-3 rounded-md'>
+                    <img src={Service_Image} alt='GWW Temp Image' className='w-full h-full object-cover rounded-md'/>
                 </div>
             </div>
 
             {/* Testimonials */}
-            <div className='h-96 bg-gray-500 w-full'>
-                Testimonials
+            <Carousel/>
+
+            {/* Contact */}
+            <div className='w-full h-144 flex justify-around p-16'>
+                <div className='w-144 h-full bg-yellow-500 flex self-center justify-center p-3 rounded-md'>
+                    <img src={Service_Image} alt='GWW Temp Image' className='w-full h-full object-cover rounded-md'/>
+                </div>
+                <div className='w-5/12 h-full bg-yellow-500 flex flex-col self-center justify-center p-6 gap-5 rounded-md text-white'>
+                    <h1 className='flex self-center'>
+                        Contact Us
+                    </h1>
+                    <h2 className='flex self-center text-center w-2/3'>
+                        San Diego Super Window Ninjas is a team of young entrepreneurs dedicated to providing professional window cleaning services to the community. 
+                        Our swift and affordable services ensure that homes are left with sparkling, radiant windows. 
+                        We offer a comprehensive range of services, including outdoor and indoor window washing, as well as screen cleaning. 
+                        Our team is highly efficient and dedicated to ensuring customer satisfaction.
+                    </h2>
+                    <span className='flex self-center text-center'>
+                        <QuoteButton />
+                    </span>
+                </div>
             </div>
 
-            {/* Get a free estimate */}
-            <div className='h-96 bg-gray-500 w-full flex justify-center'>
-                <QuoteButton />
-            </div>
+            {/* Footer */}
+            <Footer/>
 
         </div>
     );
