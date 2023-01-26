@@ -9,6 +9,7 @@ import Testimonial_Image_2 from '../assets/images/testimonials/testimonial2.jpg'
 import Testimonial_Image_3 from '../assets/images/testimonials/testimonial3.jpg';
 import Testimonial_Image_4 from '../assets/images/testimonials/testimonial4.jpeg';
 import Testimonial_Image_5 from '../assets/images/testimonials/testimonial5.jpg';
+import Testimonial_Image_6 from '../assets/images/testimonials/testimonial6.jpg';
 
 const Carousel = () => {
 
@@ -34,9 +35,9 @@ const Carousel = () => {
             image: Testimonial_Image_2,
         },
         {
-            name: 'Matthew H.',
+            name: 'Shane H.',
             text: 'Gold Window Washing performed excellently. My windows are spotless and the team did a great job. I would definitely recommend their services to anyone.',
-            image: Testimonial_Image_4,
+            image: Testimonial_Image_6,
         },
         {
             name: 'Amanda S.',
