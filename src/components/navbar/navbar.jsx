@@ -3,6 +3,8 @@ import NavButton from './nav_button.jsx';
 import QuoteButton from '../quote_button.jsx';
 import Company_Logo from '../../assets/images/company_logo.png'
 
+import { Link } from "react-router-dom";
+
 /*const NavigationBar = () => {
 
     React.useEffect(() => {
@@ -79,20 +81,28 @@ function NavigationBar() {
                   <line x1="6" y1="6" x2="18" y2="18" />
                 </svg>
               </div>
-              <ul className="MENU-LINK-MOBILE-OPEN flex flex-col items-center justify-between min-h-[250px]">
-                <li className="border-b border-gray-400 my-8 uppercase">
-                    <a href="/">Home</a>
+              <ul className="MENU-LINK-MOBILE-OPEN flex flex-col items-center justify-between min-h-[250px">
+                <li className="border-b border-black my-8 uppercase">
+                    <Link to={'/'}>
+                        <span className='text-white'>Home</span>
+                    </Link>
                 </li>
-                <li className="border-b border-gray-400 my-8 uppercase">
-                    <a href="/about">About Us</a>
+                <li className="border-b border-black my-8 uppercase">
+                    <Link to={'/about'}>
+                        <span className='text-white'>About us</span>
+                    </Link>
                 </li>
-                <li className="border-b border-gray-400 my-8 uppercase">
-                    <a href="/services">Services</a>
+                <li className="border-b border-black my-8 uppercase">
+                    <Link to={'/services'}>
+                        <span className='text-white'>Services</span>
+                    </Link>
                 </li>
-                <li className="border-b border-gray-400 my-8 uppercase">
-                    <a href="/contact">Contact</a>
+                <li className="border-b border-black my-8 uppercase">
+                    <Link to={'/contact'}>
+                        <span className='text-white'>Contact</span>
+                    </Link>
                 </li>
-                <li className="border-b border-gray-400 my-8 uppercase">
+                <li className="border-b border-black my-8 uppercase">
                     <QuoteButton />
                 </li>
               </ul>

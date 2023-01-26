@@ -27,7 +27,7 @@ const Contact = () => {
                         Located in San Diego, Gold Window Washing offers window washing services to homeowners and businesses in San Diego County and surrounding areas. To learn more about our services, please contact us using the form below. A member of our dedicated window cleaning team will respond to you shortly thereafter.
                     </h2>
                     <h2 className='flex self-center text-center max-w-3xl'>
-                        We pride ourselves on providing swift and affordable window cleaning services that leave homes with sparkling, radiant windows. Our comprehensive range of services includes outdoor and indoor window washing, as well as screen cleaning. Trust us to leave your windows spotless and ensure your satisfaction.
+                        We pride ourselves on providing swift and affordable window cleaning services that leave homes with sparkling, radiant windows. Trust us to leave your windows spotless and ensure your satisfaction.
                     </h2>
                     <span className='flex self-center text-center'>
                         <QuoteButton />

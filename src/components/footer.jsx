@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Company_Logo from '../assets/images/company_logo.png'
+import { Link } from "react-router-dom";
 
 const Footer = () => {
 
@@ -15,16 +16,20 @@ const Footer = () => {
                     © 2023 Gold Window Washing, Inc.
                 </span>
             </div>
-            <a href='/contact' className='flex self-center'>
-                <span className='text-yellow-500 hover:underline'>
-                    Contact
-                </span>
-            </a>
-            <a href='/about' className='flex self-center'>
-                <span className='text-yellow-500 hover:underline'>
-                    About
-                </span>
-            </a>
+            <div className='flex self-center'>
+                <Link to={'/contact'}>
+                    <span className='text-yellow-500 hover:underline'>
+                        Contact
+                    </span>
+                </Link>
+            </div>
+            <div className='flex self-center'>
+                <Link to={'/about'}>
+                    <span className='text-yellow-500 hover:underline'>
+                        About
+                    </span>
+                </Link>
+            </div>
         </div>
 
     );
