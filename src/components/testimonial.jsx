@@ -4,7 +4,7 @@ import './testimonial.css';
 const Testimonial = ({img, name, text}) => {
 
     return (
-        <div className='w-176 h-80 relative flex'>
+        <div className='w-176 h-96 relative flex'>
             <img src={img} alt='GWW Temp Image' className='w-96 h-full absolute object-cover'/>
             <div className='w-96 absolute h-full bg-gradient-to-r from-transparent to-yellow-500 z-10 bg-opacity-50 left-0'></div>
             <div className='w-80 absolute h-full bg-yellow-500 right-0 flex flex-col justify-center text-white'>

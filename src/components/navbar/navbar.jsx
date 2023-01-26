@@ -42,7 +42,7 @@ function NavigationBar() {
     const [isNavOpen, setIsNavOpen] = React.useState(false); // initiate isNavOpen state with false
   
     return (
-      <div className="flex items-center justify-between py-2 fixed w-full bg-yellow-400 z-30">
+      <div className="flex items-center justify-between py-3 fixed w-full bg-yellow-400 z-30">
         <div className='w-96 flex flex-row justify-center gap-x-4'>
                 <span className='flex self-center w-12 p-2 bg-black rounded-md '>
                     <img src={Company_Logo} alt='GWW Temp Image'/>
@@ -98,7 +98,7 @@ function NavigationBar() {
               </ul>
             </div>
           </section>
-          <ul className="DESKTOP-MENU hidden space-x-8 lg:flex">
+          <ul className="DESKTOP-MENU hidden space-x-6 lg:flex">
             <li className='flex self-center'>
                 <NavButton title={"Homepage"} link='/'></NavButton>
             </li>
@@ -133,7 +133,7 @@ function NavigationBar() {
             }
         `}</style>
         <div className='w-96 h-fit flex justify-center'>
-            <span className='hidden lg:flex'>
+            <span className='hidden lg:flex '>
                 <QuoteButton />
             </span>
         </div>

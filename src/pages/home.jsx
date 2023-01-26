@@ -11,6 +11,9 @@ import Frame_Treatment_Image from '../assets/images/frame_treatment.jpg'
 import Washing_Image from '../assets/images/washing_image.jpg'
 import Squeegee_Image from '../assets/images/squeegee_image.jpg'
 
+import About_Image from '../assets/images/aboutgww.png'
+import Contact_Image from '../assets/images/contact.jpg'
+
 import Carousel from '../components/carousel';
 
 const Home = () => {
@@ -21,8 +24,6 @@ const Home = () => {
             {/* Hero image */}
             <div className='w-screen h-screen fixed -z-10 bg-black'> </div>
             <img src={Hero_Image} alt='GWW Temp Image' className='w-full h-full object-cover fixed -z-10 opacity-40'/>
-
-            {/* <div className='w-screen h-screen fixed -z-10 bg-black'> </div>*/}
 
             {/* Hero Text */}
             <div className='max-w-7xl flex justify-center my-48 p-16 bg-yellow-500 rounded-md self-center bg-opacity-100 text-white'>
@@ -36,7 +37,7 @@ const Home = () => {
             </div>
 
             {/* Services */}
-            <div className='h-fit bg-black bg-opacity-70 w-full flex flex-col justify-center gap-y-14 p-14'>
+            <div className='h-fit bg-black bg-opacity-70 w-full flex flex-col justify-center gap-y-14 p-14 overflow-hidden'>
                 <div className='flex max-w-8xl justify-center gap-12 flex-wrap self-center'>
                     <span className='flex justify-center h-80'>
                         <div className='w-104 h-full bg-yellow-500 flex self-center justify-center p-6 rounded-md'>
@@ -44,10 +45,6 @@ const Home = () => {
                                 <h1 className='text-3xl'>
                                     Services:
                                 </h1>
-                                <h2 className='text-xl'>
-                                    We offer a variety of services. We offer a variety of services. We offer a variety of services. 
-                                    We offer a variety of services. We offer a variety of services. We offer a variety of services.
-                                </h2>
                             </span>
                         </div>
                     </span>
@@ -61,12 +58,12 @@ const Home = () => {
 
             {/* About */}
             <div className='w-full h-fit flex justify-around flex-wrap gap-16 py-16'>
-                <div className='max-w-3xl h-full bg-yellow-500 flex flex-col self-center justify-center p-6 gap-5 rounded-md text-white'>
+                <div className='max-w-3xl h-144 bg-yellow-500 flex flex-col self-center justify-center py-6 px-16 gap-10 rounded-md text-white'>
                         <h1 className='flex self-center'>
                             About
                         </h1>
                         <h2 className='flex self-center text-center max-w-3xl'>
-                            San Diego Super Window Ninjas is a team of young entrepreneurs dedicated to providing professional window cleaning services to the community. 
+                            Gold Window Washing is a team of young entrepreneurs dedicated to providing professional window cleaning services to the community. 
                             Our swift and affordable services ensure that homes are left with sparkling, radiant windows. 
                             We offer a comprehensive range of services, including outdoor and indoor window washing, as well as screen cleaning. 
                             Our team is highly efficient and dedicated to ensuring customer satisfaction.
@@ -75,8 +72,8 @@ const Home = () => {
                             <QuoteButton />
                         </span>
                 </div>
-                <div className='h-full bg-yellow-500 flex self-center justify-center p-3 rounded-md'>
-                    <img src={Service_Image} alt='GWW Temp Image' className='w-full h-full object-cover rounded-md'/>
+                <div className='h-144 bg-yellow-500 flex self-center justify-center p-3 rounded-md'>
+                    <img src={About_Image} alt='GWW Temp Image' className='w-160 object-cover rounded-md'/>
                 </div>
             </div>
 
@@ -85,18 +82,18 @@ const Home = () => {
 
             {/* Contact */}
             <div className='w-full h-fit flex justify-around py-16 flex-wrap gap-16'>
-                <div className='h-full bg-yellow-500 flex self-center justify-center p-3 rounded-md'>
-                    <img src={Service_Image} alt='GWW Temp Image' className='w-full h-full object-cover rounded-md'/>
+                <div className='bg-yellow-500 flex self-center justify-center p-3 rounded-md'>
+                    <img src={Contact_Image} alt='GWW Temp Image' className='w-160 h-144 object-cover rounded-md'/>
                 </div>
-                <div className='max-w-3xl h-full bg-yellow-500 flex flex-col self-center justify-center p-6 gap-5 rounded-md text-white'>
+                <div className='max-w-3xl h-144 bg-yellow-500 flex flex-col self-center justify-center py-6 px-16 gap-10 rounded-md text-white'>
                     <h1 className='flex self-center'>
                         Contact
                     </h1>
                     <h2 className='flex self-center text-center max-w-3xl'>
-                        San Diego Super Window Ninjas is a team of young entrepreneurs dedicated to providing professional window cleaning services to the community. 
-                        Our swift and affordable services ensure that homes are left with sparkling, radiant windows. 
-                        We offer a comprehensive range of services, including outdoor and indoor window washing, as well as screen cleaning. 
-                        Our team is highly efficient and dedicated to ensuring customer satisfaction.
+                        Located in San Diego, Gold Window Washing offers window washing services to homeowners and businesses in San Diego County and surrounding areas. To learn more about our services, please contact us using the form below. A member of our dedicated window cleaning team will respond to you shortly thereafter.
+                    </h2>
+                    <h2 className='flex self-center text-center max-w-3xl'>
+                        We pride ourselves on providing swift and affordable window cleaning services that leave homes with sparkling, radiant windows. Our comprehensive range of services includes outdoor and indoor window washing, as well as screen cleaning. Trust us to leave your windows spotless and ensure your satisfaction.
                     </h2>
                     <span className='flex self-center text-center'>
                         <QuoteButton />
