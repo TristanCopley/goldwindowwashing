@@ -3,7 +3,7 @@ const Card = ({ img, title, description }) => {
 
     return (
 
-        <div className='w-96 flex flex-col justify-center gap-y-4 h-full bg-yellow-600 relative rounded-md'>
+        <div className='card w-96 flex flex-col justify-center gap-y-4 h-full bg-yellow-600 relative rounded-md'>
 
             <img src={img} alt='GWW Temp Image' className='w-full h-full object-cover absolute opacity-50  rounded-md'/>
 
