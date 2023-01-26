@@ -68,8 +68,8 @@ const Carousel = () => {
     }), [testimonials];
 
     return (
-    <div className='h-fit bg-black bg-opacity-70 w-full flex flex-col justify-center overflow-hidden py-16'>
-        <div id='carousel' className='bg-red-500 h-fit w-fit flex self-center active-carousel'>
+    <div className='h-fit bg-black bg-opacity-70 w-full flex flex-col justify-center overflow-hidden py-12'>
+        <div id='carousel' className='bg-yellow-600 h-fit w-fit flex self-center active-carousel py-4'>
             <Testimonial img={testimonials[0].image} name={testimonials[0].name} text={testimonials[0].text}/>
             <Testimonial img={testimonials[1].image} name={testimonials[1].name} text={testimonials[1].text}/>
             <Testimonial img={testimonials[2].image} name={testimonials[2].name} text={testimonials[2].text}/>

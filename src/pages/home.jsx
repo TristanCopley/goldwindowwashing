@@ -5,7 +5,6 @@ import QuoteButton from '../components/quote_button';
 import Footer from '../components/footer';
 
 import Card from '../components/card.jsx'
-import Service_Image from '../assets/images/services.jpeg'
 import Detailed_Scrubbing_Image from '../assets/images/detailed_scrubbing.jpg'
 import Frame_Treatment_Image from '../assets/images/frame_treatment.jpg'
 import Washing_Image from '../assets/images/washing_image.jpg'
