@@ -61,7 +61,6 @@ function NavigationBar() {
               <span className="block h-1 w-10 bg-black"></span>
               <span className="block h-1 w-10 bg-black"></span>
             </div>
-  
             <div className={isNavOpen ? "showMenuNav" : "hideMenuNav"}>
               <div
                 className="CROSS-ICON absolute top-0 right-0 px-8 py-8"
@@ -82,56 +81,62 @@ function NavigationBar() {
               </div>
               <ul className="MENU-LINK-MOBILE-OPEN flex flex-col items-center justify-between min-h-[250px]">
                 <li className="border-b border-gray-400 my-8 uppercase">
-                  <a href="/">Home</a>
+                    <a href="/">Home</a>
                 </li>
                 <li className="border-b border-gray-400 my-8 uppercase">
-                  <a href="/about">About Us</a>
+                    <a href="/about">About Us</a>
                 </li>
                 <li className="border-b border-gray-400 my-8 uppercase">
-                  <a href="/services">Services</a>
+                    <a href="/services">Services</a>
                 </li>
                 <li className="border-b border-gray-400 my-8 uppercase">
-                  <a href="/contact">Contact</a>
+                    <a href="/contact">Contact</a>
+                </li>
+                <li className="border-b border-gray-400 my-8 uppercase">
+                    <QuoteButton />
                 </li>
               </ul>
             </div>
           </section>
-  
           <ul className="DESKTOP-MENU hidden space-x-8 lg:flex">
-            <li>
+            <li className='flex self-center'>
                 <NavButton title={"Homepage"} link='/'></NavButton>
             </li>
-            <li>
+            <li className='flex self-center'>
                 <NavButton title={"About Us"} link='/about'></NavButton>
             </li>
-            <li>
+            <li className='flex self-center'>
                 <NavButton title={"Services"} link='/services'></NavButton>
             </li>
-            <li>
+            <li className='flex self-center'>
                 <NavButton title={"Contact"} link='/contact'></NavButton>
             </li>
           </ul>
         </nav>
         <style>{`
-        .hideMenuNav {
-          display: none;
-        }
-        .showMenuNav {
-          display: block;
-          position: absolute;
-          width: 100%;
-          height: 100vh;
-          top: 0;
-          left: 0;
-          background: #eab308;
-          z-index: 10;
-          display: flex;
-          flex-direction: column;
-          justify-content: space-evenly;
-          align-items: center;
-        }
-      `}</style>
-        <div className='w-96 h-4'></div>
+            .hideMenuNav {
+                display: none;
+            }
+            .showMenuNav {
+                display: block;
+                position: absolute;
+                width: 100%;
+                height: 100vh;
+                top: 0;
+                left: 0;
+                background: #eab308;
+                z-index: 10;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+        `}</style>
+        <div className='w-96 h-fit'>
+            <span className='hidden lg:flex'>
+                <QuoteButton />
+            </span>
+        </div>
       </div>
     );
   }  
