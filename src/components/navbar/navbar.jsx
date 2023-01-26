@@ -132,7 +132,7 @@ function NavigationBar() {
                 align-items: center;
             }
         `}</style>
-        <div className='w-96 h-fit'>
+        <div className='w-96 h-fit flex justify-center'>
             <span className='hidden lg:flex'>
                 <QuoteButton />
             </span>
