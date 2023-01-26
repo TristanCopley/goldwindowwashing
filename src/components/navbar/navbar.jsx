@@ -42,7 +42,7 @@ function NavigationBar() {
     const [isNavOpen, setIsNavOpen] = React.useState(false); // initiate isNavOpen state with false
   
     return (
-      <div className="flex items-center justify-between py-4 fixed w-full bg-yellow-400 z-30">
+      <div className="flex items-center justify-between py-2 fixed w-full bg-yellow-400 z-30">
         <div className='w-96 flex flex-row justify-center gap-x-4'>
                 <span className='flex self-center w-12 p-2 bg-black rounded-md '>
                     <img src={Company_Logo} alt='GWW Temp Image'/>

@@ -1,0 +1,14 @@
+.card-text {
+
+    opacity: 0;
+    transition-duration: 500ms;
+    -webkit-user-select: none;
+    user-select: none;
+
+}
+
+.card-text:hover {
+
+    opacity: 1;
+
+}
